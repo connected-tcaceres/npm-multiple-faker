@@ -1,17 +1,16 @@
 const faker = require("faker");
 
 const rows = 10;
-const attributes = {
+const data = {
   name: ["firstName", "lastName", "jobTitle"],
   phone: ["phoneNumber"],
   random: ["number"]
 };
 
-const verifyFakerAttribute = (attr) => {};
+const verifyFakerAttribute = (attr, attrData) => {};
   if (!faker[attr]) {
     throw new Error(`Faker attribute <<${attr}>> does not exist.`);
   }
-  verifyFakerSubattribute();
   for (const subAttr of attributes[attr]) {
     if (!faker[attr][subAttr]) {
       throw new Error(
@@ -22,9 +21,9 @@ const verifyFakerAttribute = (attr) => {};
 }
 const verifyFakerSubattributes = () => {};
 
-const verifyFakerData = (attributes) => {
-  for (const attr in attributes) {
-    verifyFakerAttribute(attributes);
+const verifyFakerData = (data) => {
+  for (const attr in data) {
+    verifyFakerAttribute(attr, data[attr]);
   }
 };
 
