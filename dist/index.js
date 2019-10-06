@@ -7,10 +7,11 @@ const attributes = {
   random: ["number"]
 };
 
-for (const attr in attributes) {
+const verifyFakerAttribute = (attr) => {};
   if (!faker[attr]) {
     throw new Error(`Faker attribute <<${attr}>> does not exist.`);
   }
+  verifyFakerSubattribute();
   for (const subAttr of attributes[attr]) {
     if (!faker[attr][subAttr]) {
       throw new Error(
@@ -19,15 +20,23 @@ for (const attr in attributes) {
     }
   }
 }
+const verifyFakerSubattributes = () => {};
 
-const 
-const data = [];
-for (let i = 0; i < rows; i++) {
-  data[i] = {};
+const verifyFakerData = (attributes) => {
   for (const attr in attributes) {
-    for (const subAttr of attributes[attr]) {
-      data[i][subAttr] = faker[attr][subAttr]();
+    verifyFakerAttribute(attributes);
+  }
+};
+
+const createFakerArray = (rows, attributes) => {
+  const data = [];
+  for (let i = 0; i < rows; i++) {
+    data[i] = {};
+    for (const attr in attributes) {
+      for (const subAttr of attributes[attr]) {
+        data[i][subAttr] = faker[attr][subAttr]();
+      }
     }
   }
-}
-console.log("DATA :", data);
+  console.log("DATA :", data);
+};
