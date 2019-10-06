@@ -20,15 +20,14 @@ for (const attr in attributes) {
   }
 }
 
-// const data = {};
-// for (let i = 0; i < rows; i++) {
-//   for (const attr in attributes) {
-//     if (!faker[attr]) {
-//       throw new Error(`Faker attribute of "${attr}" does not exist.`);
-//     }
-//     for (const subAttr of attributes[attr]) {
-//       console.log(`SUB-ATTRIBUTE : ${subAttr}`);
-//       console.log(`VALUE : ${faker[attr][subAttr]()}`);
-//     }
-//   }
-// }
+const 
+const data = [];
+for (let i = 0; i < rows; i++) {
+  data[i] = {};
+  for (const attr in attributes) {
+    for (const subAttr of attributes[attr]) {
+      data[i][subAttr] = faker[attr][subAttr]();
+    }
+  }
+}
+console.log("DATA :", data);
