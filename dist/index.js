@@ -8,7 +8,12 @@ const attributes = {
 };
 
 for (let i = 0; i < rows; i++) {
+  console.log(`ROW NUMBER : ${i}`);
   for (const attr in attributes) {
-    console.log(attr);
+    console.log(`ATTRIBUTE : ${attr}`);
+    for (const subAttr of attributes[attr]) {
+      console.log(`SUB-ATTRIBUTE : ${subAttr}`);
+      console.log(`VALUE : ${faker[attr][subAttr]()}`);
+    }
   }
 }
