@@ -18,5 +18,8 @@
   "homepage": "https://github.com/tylercaceres/multiple-faker#readme",
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
   }
 }
