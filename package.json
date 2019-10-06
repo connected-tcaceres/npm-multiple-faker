@@ -1,0 +1,19 @@
+{
+  "name": "multiple-faker",
+  "version": "0.1.0",
+  "description": "simple module to provide arrays of faker data",
+  "main": "/dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylercaceres/multiple-faker.git"
+  },
+  "author": "Tyler Caceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylercaceres/multiple-faker/issues"
+  },
+  "homepage": "https://github.com/tylercaceres/multiple-faker#readme"
+}
