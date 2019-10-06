@@ -3,15 +3,19 @@ const { data, data1, data2 } = require("./mockData");
 
 describe("throws error if invalid attribute/subattribute is included", () => {
   it("fails if fake attribute is included", () => {
-    verifyFakerData(data);
+    expect(() => {
+      verifyFakerData(data);
+    }).toThrow();
   });
   it("fails if fake sub-attribute is included", () => {
-    verifyFakerData(data1);
+    expect(() => {
+      verifyFakerData(data1);
+    }).toThrow();
   });
 });
 
 describe("returns true if all attributes/sub-attributes are valid", () => {
   it("passes when attributes are valid", () => {
-    verifyFakerData(data2);
+    expect(verifyFakerData(data2)).toBe(true);
   });
 });
