@@ -16,4 +16,8 @@ const data2 = {
   random: ["number"]
 };
 
-module.exports = { data, data1, data2 };
+const rows = 1;
+const rows2 = 2;
+const rows3 = 100;
+
+module.exports = { data, data1, data2, rows, rows2, rows3 };
