@@ -2,20 +2,20 @@ const faker = require("faker");
 
 const rows = 10;
 const attributes = {
-  name: ["firstName", "lastName", "jobTitle", "poop"],
+  name: ["firstName", "lastName", "jobTitle"],
   phone: ["phoneNumber"],
   random: ["number"]
 };
 
-console.log(faker.name());
-
 for (const attr in attributes) {
   if (!faker[attr]) {
-    throw new Error(`Faker attribute of "${attr}" does not exist.`);
+    throw new Error(`Faker attribute <<${attr}>> does not exist.`);
   }
   for (const subAttr of attributes[attr]) {
     if (!faker[attr][subAttr]) {
-      throw new Error(`Faker attribute ${attr}'s sub-attribute of "${subAttr}" does not exist.`);
+      throw new Error(
+        `Faker sub-attribute <<${subAttr}>> of attribute <<${attr}>> does not exist.`
+      );
     }
   }
 }
