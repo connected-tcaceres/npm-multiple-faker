@@ -10,12 +10,14 @@ const generatedData = multipleFaker(numRows,attributes);
 ```
 
 -> generatedData is an array of objects
+
 -> numRows must be a valid integer -- this will be the number of items in the array generated
+
 -> attributes are the attributes/sub-attributes of the [faker](https://www.npmjs.com/package/faker) library
 
-Note:
+### Note:
 
-- ## the attributes and sub-attributes are taken from the [faker](https://www.npmjs.com/package/faker) library
+- the attributes and sub-attributes are taken from the [faker](https://www.npmjs.com/package/faker) library
 - attributes field should be in the following format
 
 ```
