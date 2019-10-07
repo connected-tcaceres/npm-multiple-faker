@@ -36,7 +36,7 @@ const multipleFaker = require('multiple-faker')
 
 const attributes = {
   name: ["firstName", "lastName", "jobTitle"],
-  testing: ["phoneNumber"],
+  phone: ["phoneNumber"],
   random: ["number"]
 };
 
