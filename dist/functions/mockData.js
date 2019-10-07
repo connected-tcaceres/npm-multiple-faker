@@ -1,23 +1,23 @@
-const data = {
+const data1 = {
   name: ["firstName", "lastName", "jobTitle"],
   testing: ["phoneNumber"],
   random: ["number"]
 };
 
-const data1 = {
+const data2 = {
   name: ["firstName", "lastName", "jobTitle"],
   phone: ["phoneNumber"],
   random: ["number", "testing"]
 };
 
-const data2 = {
+const data3 = {
   name: ["firstName", "lastName", "jobTitle"],
   phone: ["phoneNumber"],
   random: ["number"]
 };
 
-const rows = 1;
+const rows1 = 1;
 const rows2 = 2;
 const rows3 = 100;
 
-module.exports = { data, data1, data2, rows, rows2, rows3 };
+module.exports = { data1, data2, data3, rows1, rows2, rows3 };

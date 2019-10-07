@@ -10,7 +10,6 @@ const createFakerArray = (rows, data) => {
       }
     }
   }
-  console.log("DATA :", fakerArr);
   return fakerArr;
 };
 
