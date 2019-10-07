@@ -29,7 +29,9 @@ const attributes = {
 
 ## EXAMPLES
 
-1.
+### EXAMPLE ONE
+
+---
 
 ```
 const multipleFaker = require('multiple-faker')
@@ -58,7 +60,9 @@ const generatedData = multipleFaker(numRows,attributes);
 ];
 ```
 
-2.
+### EXAMPLE TWO
+
+---
 
 ```
 const multipleFaker = require('multiple-faker')
@@ -98,7 +102,9 @@ const generatedData = multipleFaker(numRows,attributes);
 ];
 ```
 
-3.
+### EXAMPLE THREE
+
+---
 
 ```
 const multipleFaker = require('multiple-faker')
