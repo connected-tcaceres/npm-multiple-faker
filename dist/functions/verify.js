@@ -15,7 +15,10 @@ const verifyFakerSubattribute = (attr, subattr) => {
   }
 };
 
-const verifyFakerData = (data) => {
+const verifyFakerData = (rows = 0, data) => {
+  if (typeof rows !== "number" || !Number.isInteger(rows)) {
+    throw new Error("rows number should be a valid integer");
+  }
   for (const attr in data) {
     verifyFakerAttribute(attr, data[attr]);
   }
