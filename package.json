@@ -2,7 +2,7 @@
   "name": "multiple-faker",
   "version": "0.1.0",
   "description": "simple module to provide arrays of faker data",
-  "main": "/dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "jest --coverage"
   },
