@@ -1,6 +1,6 @@
 {
   "name": "multiple-faker",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "simple module to provide arrays of faker data",
   "main": "./dist/index.js",
   "scripts": {
