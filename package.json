@@ -6,6 +6,13 @@
   "scripts": {
     "test": "jest --coverage"
   },
+  "keywords": [
+    "faker",
+    "data",
+    "generator",
+    "seed",
+    "random"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tylercaceres/multiple-faker.git"
