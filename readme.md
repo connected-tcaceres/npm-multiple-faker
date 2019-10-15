@@ -2,11 +2,17 @@
 
 This package utilizes the [faker](https://www.npmjs.com/package/faker) npm package to generate random data depending on user input.
 
-## API
+## INSTALL
 
 ```
-const multipleFaker = require('multiple-faker')
-const generatedData = multipleFaker(numRows,attributes);
+npm install multiple-faker
+```
+
+## API
+
+```js
+const multipleFaker = require("multiple-faker");
+const generatedData = multipleFaker(numRows, attributes);
 ```
 
 -> generatedData is an array of objects
