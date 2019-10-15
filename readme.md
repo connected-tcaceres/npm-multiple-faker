@@ -20,7 +20,7 @@ const generatedData = multipleFaker(numRows,attributes);
 - the attributes and sub-attributes are taken from the [faker](https://www.npmjs.com/package/faker) library
 - attributes field should be in the following format
 
-```
+```js
 const attributes = {
   attribute1: ["sub-attribute1","sub-attribute2","sub-attribute3"]
   attribute2: ["sub-attribute1","sub-attribute2","sub-attribute3"]
@@ -33,8 +33,8 @@ const attributes = {
 
 ---
 
-```
-const multipleFaker = require('multiple-faker')
+```js
+const multipleFaker = require("multiple-faker");
 
 const attributes = {
   name: ["firstName", "lastName", "jobTitle"],
@@ -42,12 +42,12 @@ const attributes = {
   random: ["number"]
 };
 
-const numRows = 1
+const numRows = 1;
 
-const generatedData = multipleFaker(numRows,attributes);
+const generatedData = multipleFaker(numRows, attributes);
 ```
 
-```
+```js
 //data
 [
   {
@@ -64,8 +64,8 @@ const generatedData = multipleFaker(numRows,attributes);
 
 ---
 
-```
-const multipleFaker = require('multiple-faker')
+```js
+const multipleFaker = require("multiple-faker");
 
 const attributes = {
   image: ["avatar"],
@@ -73,12 +73,12 @@ const attributes = {
   hacker: ["abbreviation"]
 };
 
-const numRows = 3
+const numRows = 3;
 
-const generatedData = multipleFaker(numRows,attributes);
+const generatedData = multipleFaker(numRows, attributes);
 ```
 
-```
+```js
 //data
 [
   {
@@ -106,20 +106,20 @@ const generatedData = multipleFaker(numRows,attributes);
 
 ---
 
-```
-const multipleFaker = require('multiple-faker')
+```js
+const multipleFaker = require("multiple-faker");
 
 const attributes = {
   lorem: ["word", "lines"],
   random: ["number", "uuid", "boolean", "alphaNumeric"]
 };
 
-const numRows = 2
+const numRows = 2;
 
-const generatedData = multipleFaker(numRows,attributes);
+const generatedData = multipleFaker(numRows, attributes);
 ```
 
-```
+```js
 //data
 [
   {
